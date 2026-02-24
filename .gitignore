@@ -1,0 +1,67 @@
+# Gitignore for Terraform projects and common OS/IDE files
+
+# Terraform directories
+.terraform/
+**/.terraform/
+
+# Terraform state files
+*.tfstate
+*.tfstate.backup
+terraform.tfstate
+terraform.tfstate.backup
+
+# Crash logs and plan files
+crash.log
+*.tfplan
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+terraform.tfvars
+
+# Override files (may contain local / sensitive configs)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# CLI config
+.terraformrc
+terraform.rc
+
+# Provider plugins (local caches)
+.terraform/plugins/
+
+# Keep the lock file committed to pin provider versions
+# .terraform.lock.hcl
+
+# IDEs and editors
+.vscode/
+.idea/
+*.iml
+
+# Visual Studio
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# OneDrive temporary files
+~$*
+
+# Secrets, keys and env files
+*.pem
+*.key
+.env
+.env.*
+
+# Logs, backups
+*.log
+*.bak
+*.backup
